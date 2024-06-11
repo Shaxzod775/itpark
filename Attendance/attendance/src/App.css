@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.app__attendance-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  left: 280px;
+  top: 189px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app__attendance-profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+  gap: 23px;
+
+  margin-bottom: 25px;
+
+  position: relative;
+  width: 1528px;
+  height: 150px;
+  left: 40px;
+  top: 40px;
+  z-index: 2;
+
+  background: #F9FAFB;
+  border-radius: 20px;
+}
+
+.app__attendance-profileInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 23px;
+
+  margin: 0 auto;
+  width: 433px;
+  height: 110px;
+}
+
+.app__attendance-profileInfo-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+}
+
+.app__attendance-profileInfo-details img {
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  border: 6px;
+}
+
+.app__attendance-profileInfo-detailsText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 172px;
+  height: auto;
+
+  gap: 5px;
+}
+
+
+.app__attendance-profileInfo-studentName {
+  width: 141px;
+  height: 29px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #191919;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.app__attendance-profileInfo-studentID {
+  width: 64px;
+  height: 18px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #AEB2BA;
+
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.app__attendance-profileInfo-announcementDate {
+  width: 160px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+
+  display: flex;
+  letter-spacing: 0.01em;
+
+  color: #AEB2BA;
+
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.app__attendance-profileInfo-money {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px 10px;
+  gap: 10px;
+
+  width: auto;
+  height: 47px;
+
+  border:none;
+
+  background: #8E99DE;
+  border-radius: 49px;
+}
+
+.app__attendance-profileInfo-money:hover {
+  cursor:pointer;
+}
+
+.app__attendance-profileInfo-moneyIcon {
+  color: white;
+  max-width: 24px;
+  max-height: 24px;
+}
+
+
+.app__attendance-profileInfo-moneyText {
+  width: 51px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+}
+
+.app__attendance-profileInfo-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end-;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  margin: 0 auto;
+  width: 413px;
+  height: auto;
+
+}
+
+.app__attendance-profileInfo-buttons button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 10px 40px;
+  gap: 10px;
+
+  width: 206px;
+  height: 44px;
+
+  background: #6574D8;
+  border-radius: 10px;
+
+  border: none;
+}
+
+.app__attendance-profileInfo-buttons button:hover {
+  cursor: pointer;
+}
+
+.app__attendance-profileInfo-buttons p {
+  width: 92px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+
+  letter-spacing: 0.02em;
+
+  color: #FFFFFF;
+}
+
+.app__attendance-profileInfo-buttons img {
+  position: absolute;
+  left: 4.17%;
+  right: 4.17%;
+  top: 4.17%;
+  bottom: 4.17%;
+
+  background: #FFFFFF;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+.app__attendance-dashboard-container {
+  position: relative;
+
+  bottom: 10px; 
+  left: 0; 
+  z-index: 1;
+}
+
+.app__attendance-dashboard-sectionsButtons {
+  position: absolute; 
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 5px;
+
+  left: 50px;
+  width: 908px;
+  height: auto;
+
+  margin-top: 55px;
+}
+
+.app__attendance-dashboard-sectionsButtons button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 11px 10px;
+  gap: 10px;
+
+  width: auto;
+  height: 49px;
+
+  border-radius: 10px;
+  border: none;
+
+  background-color: white;
+}
+
+.app__attendance-dashboard-sectionsButtons button:hover {
+  cursor: pointer;
+}
+
+.app__attendance-dashboard-sectionsButtons button:active {
+  background-color: #8E99DE;
+}
+
+.app__attendance-dashboard-sectionsButtons p {
+  width: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #AEB2BA;
+}
+
+.app__attendance-dashboard-sectionsButtons p:active {
+  color: #FFFFFF;
+}
+
+.dotIcon {
+  color:#AEB2BA;
+  font-size: 5px;
+}
+
+.app__attendance-dashboard-section-attendance:active {
+  background-color: #8E99DE;
+  color: #FFFFFF;
+}
+
+
+.app__attendance-dashboard-title-container {
+  position: absolute;
+  margin-top: 150px;
+
+  width: 1528px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+
+  display: flex;
+  align-items: center;
+
+  letter-spacing: 0.02em;
+
+  color: #1C0D64;
+}
+
+.app__attendance-dashboard-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  margin: 0 auto;
+
+  height: auto;
+}
+
+.attendanceIcon {
+  margin-right: 10px;
+  width: 28px;
+  height: 28px;
+}
+
+
+
+
+
