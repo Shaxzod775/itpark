@@ -200,11 +200,13 @@
 
   letter-spacing: 0.01em;
 
-  color: #6574D8;
-
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.removeFilters-text {
+  color: #6574d8;
 }
 
 .app__groups-filters-addGroup-container {

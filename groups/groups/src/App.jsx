@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import rectangle from './assets/rectangle.jpg';
 import arrrowBack from './assets/arrowBack.jpg';
 import search from './assets/search.jpg';
@@ -30,7 +30,6 @@ const App = () => {
   };
 
 
-
   return (
     <div className="app__groups-container">
       <div className="app__groups-filters-container">
@@ -49,7 +48,7 @@ const App = () => {
               </div>
               <InputWithArrow placeholder={'Учителя'} defaultChoice='Все' choices={['Все']} />
               <InputWithArrow defaultChoice='Все' choices={['Все']} icon={handbook} />
-              <button className='app__groups-topFilters-removeFilters' onClick={() => {}}><p>Сбросить фильтр</p></button>
+              <button className='app__groups-topFilters-removeFilters' onClick={() => {}}><p className='removeFilters-text'>Сбросить фильтр</p></button>
             </div>
           </div>
           <div className='app__groups-filters-addGroup-container'>
