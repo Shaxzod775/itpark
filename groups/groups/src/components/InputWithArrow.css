@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.input-container {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 8px;
+
+  width: auto;
+  height: 36px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #E5E7EB;
+  border-radius: 10px;
+
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  position: relative; 
+}
+
+.input-container:hover {
+  cursor: pointer;
+}
+
+.input-container.longText {
+  padding: 6px 0px 6px 10px;
+}
+
+.input-container.extraLongText {
+  width: 140px;
+  padding: 6px 0px 6px 10px;
+}
+
+.inputIcon{
+  position: relative;
+  right: 35px;
+  top: 5%;
+  width: 17px; 
+  height: 17px; 
+}
+
+
+.inputText {
+  width: 54px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+
+  color: #9CA3AF;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.inputText.extraLongText {
+  width: auto;
+}
+
+
+.inputChoice {
+  width: 26px;
+  height: auto;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  color: #374151;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.inputChoice.longText {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.inputChoice.extraLongText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputChoice.with-icon {
+  padding-left: 28px; 
+}
+
+
+.input-container img {
+  width: 20px;
+  height: 20px;
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+
+.choices-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+}
+
+.input-container.focused .choices-container {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.choice {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.choice:hover {
+  background: #f0f0f0;
+}
+
+.focused .icon {
+  display: none;
+}
