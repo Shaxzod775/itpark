@@ -1,0 +1,10 @@
+:root {
+  background-color: #F9FAFB;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
