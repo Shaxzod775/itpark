@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-.app__groups-container {
-  width: 100%;
+.app__teachers-container {
+  width: 1608[x];
   height: 100%;
 
   background-color: #F9FAFB;
@@ -14,42 +14,28 @@
   justify-content: center;
 }
 
-.app__groups-filters-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    margin: 0 auto;
-    padding: 25px 25px 0px 25px;
-    width: 100%;
-    height: auto;
+.app__teachers-filters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 830px;
+  
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 20px;
+  top: 35px;
 }
 
-.app__groups-topFilters-container {
-    position: relative;
-
-    right: 10px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 30px;
-
-    width: 1608px;
-
-} 
-
-.app__groups-topFilters-arrowBack-title-container {
+.app__teachers-filters-arrowBack-title-container {
   display: flex;
-  justify-content: center;
+
   gap: 30px;
 }
 
-.app__groups-topFilters-arrowBack-needed-container {
+.app__teachers-filters-arrowBack-needed-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,7 +43,7 @@
   gap: 15px;
 }
 
-.app__groups-topFilters-arrowBack-container {
+.app__teachers-filters-arrowBack-container {
   box-sizing: border-box;
 
   display: flex;
@@ -76,18 +62,18 @@
   border-radius: 10px;
 }
 
-.app__groups-topFilters-arrowBack-container:hover {
+.app__teachers-filters-arrowBack-container:hover {
   cursor:pointer;
 }
 
-.app__groups-topFilters-arrowBack {
+.app__teachers-filters-arrowBack {
   justify-content: center;
   align-items: center;
   width: 24px;
   height: 24px;
 }
 
-.app__groups-topFilters-title {
+.app__teachers-filters-title {
   width: 105px;
   height: auto;
 
@@ -106,19 +92,19 @@
   color: #1F2937;
  }
 
- .app__groups-topFilters {
+ .app__teachers-filters {
     display: flex;
     flex-direction: row;
     gap: 30px;
  }
 
 
- .app__groups-topFilter-searchGroup-container {
+ .app__teachers-filter-searchTeacher-container {
   position: relative;
   width: 100%;
  }
 
- .searchGroup-icon {
+ .searchTeacher-icon {
   position: absolute;
   left: 10px;
   top: 24%;
@@ -126,7 +112,7 @@
   height: 17px; 
  }
 
-.app__groups-topFilter-searchGroup {
+.app__teachers-filter-searchTeacher {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -142,7 +128,7 @@
   border-radius: 10px;
 }
 
-.app__groups-topFilter-searchGroup::placeholder {
+.app__teachers-filter-searchTeacher::placeholder {
   width: 155px;
   height: auto;
 
@@ -161,34 +147,19 @@
   padding-left: 5px;
 }
 
-.app__groups-topFilters-removeFilters {
-  box-sizing: border-box;
+.app__teachers-filters-addTeacher-container {
+  position: absolute;
+
+  left: 1155px;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 14px;
+  justify-content: flex-end;
+
   gap: 10px;
-
-  width: 149px;
-  height: 35px;
-  
-  background-color: white;
-
-  border: 1px solid #6574D8;
-  border-radius: 10px;
-
-  flex: none;
-  order: 3;
-  flex-grow: 0;
 }
 
-.app__groups-filters-addGroup-container:hover {
-  cursor:pointer;
-}
-
-.app__groups-filters-addGroup-container p {
+.app__teachers-filters-addTeacher-container p {
   width: 121px;
   height: 21px;
 
@@ -200,21 +171,15 @@
 
   letter-spacing: 0.01em;
 
+  color: #6574D8;
+
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-.removeFilters-text {
-  color: #6574d8;
-}
-
-.app__groups-filters-addGroup-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-
-  gap: 10px;
+.app__teachers-filters-addTeacher-container:hover {
+  cursor:pointer;
 }
 
 .rectangleIcon-container {
@@ -257,60 +222,13 @@
   flex-grow: 0;
 }
 
-.peopleIcon-container {
+.app__teachers-filters-addTeacher {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  gap: 10px;
 
-  width: 75px;
-  height: 36px;
-
-  border-radius: 10px;
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-.peopleIcon-container img {
-  width: 20px;
-  height: 20px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.peopleIcon-container p {
-  width: 25px;
-  height: 21px;
-
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-
-  letter-spacing: 0.01em;
-
-  color: #6574D8;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.app__groups-filters-addStudent {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
 
   width: 179px;
   height: 36px;
@@ -326,24 +244,20 @@
   flex-grow: 0;
 }
 
-.app__groups-filters-addStudent:hover {
+.app__teachers-filters-addTeacher:hover {
   cursor: pointer;
 }
 
-.app__groups-filters-addStudent img {
-  width: 20px;
-  height: 20px;
-
-  position: relative;
-  left: 20px;
+.app__teachers-filters-addTeacher img {
+  width: 15px;
+  height: 15px;
 
   flex: none;
   order: 0;
   flex-grow: 0;
-
 }
 
-.app__groups-filters-addStudent p {
+.app__teachers-filters-addTeacher p {
   width: 129px;
   height: auto;
 
@@ -363,86 +277,68 @@
 }
 
 
-.app__groups-filters-showAll-container {
+.app__teachers-filters-downloadList {
+  box-sizing: border-box;
+  
+
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 0px;
-  gap: 4px;
+  padding: 10px 15px;
 
-  width: 175px;
-  height: auto;
+  width: 208px;
+  height: 35px;
 
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
+  align-self: stretch;
+  
+  background-color: white;
 
-.app__groups-filters-showAll-container:hover {
- cursor:pointer;
-}
+  border: 1px solid #6574D8;
+  border-radius: 10px;
+} 
 
-.app__gropus-filters-showAll {
-  width: 155px;
-  height: auto;
+.app__teachers-filters-downloadList img {
+  width: 20px;
+  height: 20px;
+} 
 
-  font-family: 'Inter';
+.downloadList-text {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
 
-  display: flex;
-  align-items: center;
-
-  color: #5048E5;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.app__groups-filters-showAll-container img {
-  width: 16px;
-  height: 16px;
-
-  color: #F9FAFB;
+  color: #6574D8;
 
   flex: none;
   order: 1;
   flex-grow: 0;
-}
+} 
 
 
-.app__groups-bottomFilters {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-
-  width: 885px;
-  height: 36px;
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.app__groups-list-container {
+.app__teachers-list-container {
   box-sizing: border-box;
   position: absolute;
   width: 1608px;
   height: 784px;
   left: 20px;
   right: 20px;
-  top: 215px;
+  top: 105px;
   background: #FFFFFF;
   border: 1px solid #E5E7EB;
   border-radius: 20px;
 }
 
-.app__groups-list-headers {
+.app__teachers-list-headers {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -457,7 +353,7 @@
   border-radius: 29px;
 }
 
-.app__groups-list-headers-groupName-container {
+.app__teachers-list-headers-teacherName-container {
   position: relative;
   right: 100px;
 
@@ -474,7 +370,7 @@
   flex-grow: 0;
 }
 
-.app__groups-list-headers-groupName-container input {
+.app__teachers-list-headers-teacherName-container input {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -491,7 +387,7 @@
   flex-grow: 0;
 }
 
-.app__groups-list-headers-groupName {
+.app__teachers-list-headers-teacherName {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -507,9 +403,13 @@
   flex-grow: 0;
 }
 
+.app__teachers-list-header-phoneNumber {
+  width: 75px;
+}
 
 
-.app__groups-list-otherHeaders-container {
+
+.app__teachers-list-otherHeaders-container {
   position: relative;
   right: 60px;
 
@@ -527,7 +427,7 @@
   flex-grow: 0;
 }
 
-.app__groups-list-otherHeaders-container h2 {
+.app__teachers-list-otherHeaders-container h2 {
   height: 18px;
   font-family: 'Poppins';
   font-style: normal;
@@ -543,42 +443,37 @@
   flex-grow: 0;
 }
 
-.app__groups-list-wrapper {
+.app__teachers-list-wrapper {
   overflow-y: auto; 
   overflow-x: hidden; 
-  max-height: 635px; 
-
-  border: 2px solid #B8C2FF; 
-  border-radius: 5px; 
+  max-height: 635px;  
 }
 
-.app__groups-list-wrapper::-webkit-scrollbar {
+.app__teachers-list-wrapper::-webkit-scrollbar {
   width: 10px;
   height: 10px; 
-  background-color: #FFFFFF; 
-
   border: 2px solid #B8C2FF; 
   border-radius: 5px; 
 }
 
-.app__groups-list-wrapper::-webkit-scrollbar-thumb {
+.app__teachers-list-wrapper::-webkit-scrollbar-thumb {
   background-color: #B8C2FF; 
   border: 1px solid #B8C2FF; 
   border-radius: 5px; 
 }
 
-.app__groups-list-wrapper::-webkit-scrollbar-thumb:hover {
+.app__teachers-list-wrapper::-webkit-scrollbar-thumb:hover {
   background-color: #555; 
 }
 
 
-.app__groups-list {
+.app__teachers-list {
   width: 100%;
   margin-top: 50px; 
 }
 
 
-.app__groups-list-item {
+.app__teachers-list-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -593,7 +488,27 @@
   top: 20px;
 }
 
-.app__groups-list-item-fullname-container input {
+.app__teachers-list-item-teacherName-container {
+  position: relative;
+
+  right: 32px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 26px;
+  padding-right: 610px;
+  gap: 0px;
+
+  margin: 0 auto;
+  width: 100px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.app__teachers-list-item-teacherName-container input {
   box-sizing: border-box;
 
   display: flex;
@@ -616,10 +531,9 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-
 }
 
-.app__groups-list-item-fullname-container p {
+.app__teachers-list-item-teacherName-container p {
   width: auto;
   height: 18px;
 
@@ -642,7 +556,7 @@
   flex-grow: 0;
 }
 
-.app__groups-list-item-otherInfo-container {
+.app__teachers-list-item-otherInfo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -657,64 +571,37 @@
   margin: 0 auto;
 }
 
-
-.app__groups-list-item-fullname-container {
-  position: relative;
-
-  right: 30px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 26px;
-  padding-right: 610px;
-  gap: 0px;
-
-  margin: 0 auto;
-  width: 100px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.app__groups-list-item-startDate {
+.app__teachers-list-item-specialization {
   position:relative;
-  right: 180px;
+  right: 215px;
 }
 
-.app__groups-list-item-completionDate {
+.app__teachers-list-item-numberOfGroup {
   position:relative;
-  right: 145px;
-
+  right: 195px;
 }
 
-.app__groups-list-item-lessonDays {
+.app__teachers-list-item-phoneNumber {
   position:relative;
-  right: 75px;
+  right: 85px;
 }
 
-.app__groups-list-item-teacher {
+.app__teachers-list-item-numberOfStudents {
   position:relative;
-  right: 45px
+  right: 100px
 }
 
-.app__groups-list-item-duration {
+.app__teachers-list-item-hiredDate {
   position:relative;
-  right: 65px
+  right: 10px
 }
 
-.app__groups-list-item-room {
+.app__teachers-list-item-branch {
   position:relative;
-  right: 5px
+  left: 90px;
 }
 
-.app__groups-list-item-studentsNumber {
-  position:relative;
-  left: 15px
-}
-
-.app__groups-list-item-otherInfo-container p {
+.app__teachers-list-item-otherInfo-container p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -749,6 +636,9 @@
   border: 0.75px solid #6574D8;
   border-radius: 7.5px;
 
+  position: relative;
+  left: 85px;
+
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -769,7 +659,7 @@
   flex-grow: 0;
 }
 
-.app__groups-list-item:nth-child(even) {
+.app__teachers-list-item:nth-child(even) {
   background-color: #F9FAFB;
 }
 
